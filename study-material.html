@@ -4,54 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Study Material | Ajay Chauhan</title>
+    <title>Study Material - Ajay Chauhan</title>
 
     <style>
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         body {
             font-family: Arial, sans-serif;
-            background: #f5f7fb;
-            color: #1e293b;
+            background: #f4f7fb;
+            color: #222;
         }
 
         header {
-            background: #0f172a;
+            background: #111827;
             color: white;
+            padding: 25px 20px;
             text-align: center;
-            padding: 25px 15px;
         }
 
         header h1 {
-            font-size: 28px;
+            font-size: 30px;
+            margin-bottom: 8px;
         }
 
         header p {
-            margin-top: 7px;
-            color: #cbd5e1;
+            font-size: 15px;
+            color: #d1d5db;
         }
 
         .container {
-            max-width: 900px;
-            margin: auto;
-            padding: 45px 20px;
-            min-height: 65vh;
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
         }
 
         .back {
             display: inline-block;
-            color: #2563eb;
+            margin-bottom: 25px;
             text-decoration: none;
+            color: #2563eb;
             font-weight: bold;
-            margin-bottom: 35px;
-        }
-
-        .back:hover {
-            text-decoration: underline;
         }
 
         .title {
@@ -65,97 +61,97 @@
         }
 
         .title p {
-            color: #64748b;
+            color: #666;
         }
 
-        .course-card {
-            display: block;
+        .card {
             background: white;
-            padding: 35px 25px;
-            border-radius: 16px;
+            border-radius: 15px;
+            padding: 30px;
             text-align: center;
-            text-decoration: none;
-            color: #1e293b;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            transition: 0.3s;
-            max-width: 400px;
+            max-width: 500px;
             margin: auto;
         }
 
-        .course-card:hover {
-            transform: translateY(-6px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
-        }
-
-        .icon {
+        .card .icon {
             font-size: 55px;
             margin-bottom: 15px;
         }
 
-        .course-card h3 {
-            font-size: 24px;
+        .card h3 {
+            font-size: 25px;
             margin-bottom: 10px;
         }
 
-        .course-card p {
-            color: #64748b;
-            font-size: 14px;
+        .card p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
         }
 
         footer {
-            background: #0f172a;
-            color: white;
+            margin-top: 60px;
+            background: #111827;
+            color: #ccc;
             text-align: center;
-            padding: 22px;
-        }
-
-        @media (max-width: 600px) {
-            .title h2 {
-                font-size: 26px;
-            }
-
-            .course-card {
-                padding: 30px 20px;
-            }
+            padding: 20px;
+            font-size: 14px;
         }
     </style>
 </head>
 
 <body>
 
-    <header>
-        <h1>AJAY CHAUHAN</h1>
-        <p>Student Learning Portal</p>
-    </header>
+<header>
+    <h1>AJAY CHAUHAN</h1>
+    <p>Learn Better. Study Smarter.</p>
+</header>
 
-    <div class="container">
+<div class="container">
 
-        <a href="index.html" class="back">
-            ← Back to Home
-        </a>
+    <a href="index.html" class="back">← Back to Home</a>
 
-        <div class="title">
-            <h2>📚 Study Material</h2>
-            <p>Select a course to continue</p>
-        </div>
+    <div class="title">
+        <h2>📚 Study Material</h2>
+        <p>Select your course to access study materials.</p>
+    </div>
 
-        <a href="bcom.html" class="course-card">
+    <div class="card">
 
-            <div class="icon">📘</div>
+        <div class="icon">📚</div>
 
-            <h3>B.Com</h3>
+        <h3>B.Com</h3>
 
-            <p>
-                Click here to view B.Com semesters
-            </p>
+        <p>
+            Access B.Com semester-wise study material,
+            units, notes and PDF resources.
+        </p>
 
+        <a href="bcom.html" class="btn">
+            Open B.Com
         </a>
 
     </div>
 
-    <footer>
-        © 2026 Ajay Chauhan. All Rights Reserved.
-    </footer>
+</div>
+
+<footer>
+    © 2026 Ajay Chauhan | Educational Study Material
+</footer>
 
 </body>
 </html>

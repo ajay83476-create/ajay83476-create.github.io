@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Study Material | Ajay Chauhan</title>
 
     <style>
-        body {
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
             font-family: Arial, sans-serif;
             background: #f5f7fb;
             color: #1e293b;
@@ -17,80 +23,139 @@
             background: #0f172a;
             color: white;
             text-align: center;
-            padding: 25px;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        header p {
+            margin-top: 7px;
+            color: #cbd5e1;
         }
 
         .container {
             max-width: 900px;
             margin: auto;
-            padding: 50px 20px;
+            padding: 45px 20px;
+            min-height: 65vh;
         }
 
         .back {
-            text-decoration: none;
+            display: inline-block;
             color: #2563eb;
+            text-decoration: none;
             font-weight: bold;
+            margin-bottom: 35px;
         }
 
-        h2 {
+        .back:hover {
+            text-decoration: underline;
+        }
+
+        .title {
             text-align: center;
-            margin: 35px 0;
+            margin-bottom: 35px;
         }
 
-        .card {
+        .title h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .title p {
+            color: #64748b;
+        }
+
+        .course-card {
             display: block;
             background: white;
-            padding: 30px;
-            margin: 20px 0;
-            border-radius: 15px;
+            padding: 35px 25px;
+            border-radius: 16px;
             text-align: center;
             text-decoration: none;
             color: #1e293b;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+            max-width: 400px;
+            margin: auto;
         }
 
-        .card:hover {
-            transform: translateY(-3px);
+        .course-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
         }
 
         .icon {
-            font-size: 45px;
+            font-size: 55px;
+            margin-bottom: 15px;
+        }
+
+        .course-card h3 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .course-card p {
+            color: #64748b;
+            font-size: 14px;
         }
 
         footer {
             background: #0f172a;
             color: white;
             text-align: center;
-            padding: 20px;
-            margin-top: 50px;
+            padding: 22px;
+        }
+
+        @media (max-width: 600px) {
+            .title h2 {
+                font-size: 26px;
+            }
+
+            .course-card {
+                padding: 30px 20px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-<header>
-    <h1>AJAY CHAUHAN</h1>
-    <p>Student Learning Portal</p>
-</header>
+    <header>
+        <h1>AJAY CHAUHAN</h1>
+        <p>Student Learning Portal</p>
+    </header>
 
-<div class="container">
+    <div class="container">
 
-    <a href="index.html" class="back">← Back to Home</a>
+        <a href="index.html" class="back">
+            ← Back to Home
+        </a>
 
-    <h2>📚 Study Material</h2>
+        <div class="title">
+            <h2>📚 Study Material</h2>
+            <p>Select a course to continue</p>
+        </div>
 
-    <a href="bcom.html" class="card">
-        <div class="icon">📘</div>
-        <h2>B.Com</h2>
-        <p>Click here to view B.Com semesters</p>
-    </a>
+        <a href="bcom.html" class="course-card">
 
-</div>
+            <div class="icon">📘</div>
 
-<footer>
-    © 2026 Ajay Chauhan
-</footer>
+            <h3>B.Com</h3>
+
+            <p>
+                Click here to view B.Com semesters
+            </p>
+
+        </a>
+
+    </div>
+
+    <footer>
+        © 2026 Ajay Chauhan. All Rights Reserved.
+    </footer>
 
 </body>
 </html>

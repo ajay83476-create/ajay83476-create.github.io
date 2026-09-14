@@ -1,28 +1,228 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B.Com Semester 1 | Ajay Chauhan</title>
+
+    <title>B.Com Semester 5 - Ajay Chauhan</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fb;
+            color: #222;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 25px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #d1d5db;
+            font-size: 15px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .back {
+            display: inline-block;
+            margin-bottom: 25px;
+            text-decoration: none;
+            color: #2563eb;
+            font-weight: bold;
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .title h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .title p {
+            color: #666;
+        }
+
+        .unit-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .unit {
+            background: white;
+            padding: 28px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .unit .icon {
+            font-size: 45px;
+            margin-bottom: 12px;
+        }
+
+        .unit h3 {
+            font-size: 23px;
+            margin-bottom: 10px;
+        }
+
+        .unit p {
+            color: #666;
+            margin-bottom: 18px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 11px 22px;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #1d4ed8;
+        }
+
+        .locked {
+            opacity: 0.65;
+        }
+
+        .coming {
+            display: inline-block;
+            padding: 10px 18px;
+            background: #e5e7eb;
+            color: #555;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        footer {
+            margin-top: 60px;
+            background: #111827;
+            color: #ccc;
+            text-align: center;
+            padding: 20px;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            .unit-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .title h2 {
+                font-size: 27px;
+            }
+        }
+    </style>
 </head>
 
-<body style="font-family:Arial;background:#f5f7fb;margin:0;color:#1e293b;">
+<body>
 
-<header style="background:#0f172a;color:white;text-align:center;padding:25px;">
+<header>
     <h1>AJAY CHAUHAN</h1>
-    <p>B.Com - Semester 1</p>
+    <p>Learn Better. Study Smarter.</p>
 </header>
 
-<main style="max-width:900px;margin:auto;padding:40px 20px;">
-    <a href="bcom.html">← Back to B.Com</a>
+<div class="container">
 
-    <h2 style="text-align:center;margin:40px 0;">📚 Semester 1 Subjects</h2>
+    <a href="bcom.html" class="back">
+        ← Back to B.Com
+    </a>
 
-    <div style="background:white;padding:30px;border-radius:15px;text-align:center;">
-        <h3>Subjects will be added soon</h3>
-        <p>Study material, PDF, PPT and notes will be available here.</p>
+    <div class="title">
+        <h2>📚 B.Com Semester 5</h2>
+        <p>Select a unit to access study material</p>
     </div>
-</main>
+
+    <div class="unit-grid">
+
+        <!-- Unit 1 -->
+        <div class="unit">
+            <div class="icon">📘</div>
+            <h3>Unit 1</h3>
+            <p>Study material and PDF</p>
+
+            <a href="unit1-sem5.html" class="btn">
+                Open Unit 1
+            </a>
+        </div>
+
+        <!-- Unit 2 -->
+        <div class="unit">
+            <div class="icon">📗</div>
+            <h3>Unit 2</h3>
+            <p>Study material and PDF</p>
+
+            <a href="unit2-sem5.html" class="btn">
+                Open Unit 2
+            </a>
+        </div>
+
+        <!-- Unit 3 -->
+        <div class="unit locked">
+            <div class="icon">📙</div>
+            <h3>Unit 3</h3>
+            <p>Material will be added soon.</p>
+
+            <span class="coming">
+                Coming Soon
+            </span>
+        </div>
+
+        <!-- Unit 4 -->
+        <div class="unit">
+            <div class="icon">📕</div>
+            <h3>Unit 4</h3>
+            <p>Study material and PDF</p>
+
+            <a href="unit4-sem5.html" class="btn">
+                Open Unit 4
+            </a>
+        </div>
+
+        <!-- Unit 5 -->
+        <div class="unit locked">
+            <div class="icon">📖</div>
+            <h3>Unit 5</h3>
+            <p>Material will be added soon.</p>
+
+            <span class="coming">
+                Coming Soon
+            </span>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Ajay Chauhan | Educational Study Material
+</footer>
 
 </body>
 </html>

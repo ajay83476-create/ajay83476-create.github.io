@@ -3,11 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>B.Com | Ajay Chauhan</title>
 
     <style>
-        body {
+        * {
             margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
             font-family: Arial, sans-serif;
             background: #f5f7fb;
             color: #1e293b;
@@ -17,60 +23,99 @@
             background: #0f172a;
             color: white;
             text-align: center;
-            padding: 25px;
+            padding: 25px 15px;
+        }
+
+        header h1 {
+            font-size: 28px;
+        }
+
+        header p {
+            margin-top: 7px;
+            color: #cbd5e1;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: auto;
             padding: 40px 20px;
         }
 
         .back {
+            display: inline-block;
             color: #2563eb;
             text-decoration: none;
             font-weight: bold;
+            margin-bottom: 30px;
         }
 
-        h2 {
+        .title {
             text-align: center;
-            margin: 30px 0;
+            margin-bottom: 35px;
         }
 
-        .grid {
+        .title h2 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+
+        .title p {
+            color: #64748b;
+        }
+
+        .semester-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             gap: 20px;
         }
 
-        .card {
+        .semester-card {
             background: white;
-            padding: 30px 15px;
-            border-radius: 15px;
+            padding: 30px 20px;
+            border-radius: 16px;
             text-align: center;
             text-decoration: none;
             color: #1e293b;
             box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
         }
 
-        .card:hover {
-            transform: translateY(-4px);
+        .semester-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.12);
         }
 
         .icon {
-            font-size: 40px;
+            font-size: 45px;
+            margin-bottom: 12px;
+        }
+
+        .semester-card h3 {
+            font-size: 21px;
+            margin-bottom: 8px;
+        }
+
+        .semester-card p {
+            color: #64748b;
+            font-size: 14px;
         }
 
         footer {
             background: #0f172a;
             color: white;
             text-align: center;
-            padding: 20px;
-            margin-top: 50px;
+            padding: 22px;
+            margin-top: 30px;
         }
 
-        @media(max-width:600px) {
-            .grid {
+        @media (max-width: 700px) {
+            .semester-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 450px) {
+            .semester-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -81,45 +126,56 @@
 
 <header>
     <h1>AJAY CHAUHAN</h1>
-    <p>B.Com Study Material</p>
+    <p>Student Learning Portal</p>
 </header>
 
 <div class="container">
 
-    <a href="study-material.html" class="back">← Back to Study Material</a>
+    <a href="study-material.html" class="back">
+        ← Back to Study Material
+    </a>
 
-    <h2>📘 B.Com Semesters</h2>
+    <div class="title">
+        <h2>📘 B.Com</h2>
+        <p>Select your semester</p>
+    </div>
 
-    <div class="grid">
+    <div class="semester-grid">
 
-        <a href="semester1.html" class="card">
+        <a href="semester1.html" class="semester-card">
             <div class="icon">📚</div>
             <h3>Semester 1</h3>
+            <p>View subjects & study material</p>
         </a>
 
-        <a href="semester2.html" class="card">
+        <a href="semester2.html" class="semester-card">
             <div class="icon">📚</div>
             <h3>Semester 2</h3>
+            <p>View subjects & study material</p>
         </a>
 
-        <a href="semester3.html" class="card">
+        <a href="semester3.html" class="semester-card">
             <div class="icon">📚</div>
             <h3>Semester 3</h3>
+            <p>View subjects & study material</p>
         </a>
 
-        <a href="semester4.html" class="card">
+        <a href="semester4.html" class="semester-card">
             <div class="icon">📚</div>
             <h3>Semester 4</h3>
+            <p>View subjects & study material</p>
         </a>
 
-        <a href="semester5.html" class="card">
+        <a href="semester5.html" class="semester-card">
             <div class="icon">📚</div>
             <h3>Semester 5</h3>
+            <p>View subjects & study material</p>
         </a>
 
-        <a href="semester6.html" class="card">
+        <a href="semester6.html" class="semester-card">
             <div class="icon">📚</div>
             <h3>Semester 6</h3>
+            <p>View subjects & study material</p>
         </a>
 
     </div>
@@ -127,7 +183,7 @@
 </div>
 
 <footer>
-    © 2026 Ajay Chauhan
+    © 2026 Ajay Chauhan. All Rights Reserved.
 </footer>
 
 </body>

@@ -1,177 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Unit 1 | Indian Marketing Management Practices</title>
+<title>Unit 1 | Indian Marketing Management Practices</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f7fb;
-            color: #1f2937;
-            line-height: 1.6;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
 
-        header {
-            background: #111827;
-            color: white;
-            padding: 28px 20px;
-            text-align: center;
-        }
+header {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 28px 20px;
+}
 
-        header h1 {
-            font-size: 30px;
-            margin-bottom: 6px;
-        }
+header h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
 
-        header p {
-            color: #d1d5db;
-            font-size: 15px;
-        }
+header p {
+    color: #d1d5db;
+}
 
-        .container {
-            max-width: 900px;
-            margin: 35px auto;
-            padding: 0 20px;
-        }
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
 
-        .back {
-            display: inline-block;
-            margin-bottom: 20px;
-            text-decoration: none;
-            color: #2563eb;
-            font-weight: bold;
-        }
+.back {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        .main-card {
-            background: white;
-            border-radius: 16px;
-            padding: 35px 25px;
-            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
-            text-align: center;
-        }
+.card {
+    background: white;
+    padding: 35px 25px;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    text-align: center;
+}
 
-        .badge {
-            display: inline-block;
-            background: #e8f0ff;
-            color: #2563eb;
-            padding: 7px 16px;
-            border-radius: 20px;
-            font-weight: bold;
-            font-size: 14px;
-            margin-bottom: 18px;
-        }
+.badge {
+    display: inline-block;
+    background: #e8f0ff;
+    color: #2563eb;
+    padding: 7px 15px;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
 
-        .main-card h2 {
-            font-size: 28px;
-            margin-bottom: 12px;
-            color: #111827;
-        }
+h2 {
+    font-size: 28px;
+    color: #111827;
+    margin-bottom: 10px;
+}
 
-        .subject {
-            font-size: 18px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            color: #374151;
-        }
+.subject {
+    font-size: 18px;
+    font-weight: bold;
+    color: #374151;
+}
 
-        .author {
-            background: #f9fafb;
-            border-radius: 12px;
-            padding: 18px;
-            margin: 25px 0;
-        }
+.author {
+    margin: 25px 0;
+    padding: 18px;
+    background: #f9fafb;
+    border-radius: 12px;
+}
 
-        .author strong {
-            display: block;
-            font-size: 18px;
-            margin-bottom: 5px;
-        }
+.author strong {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
 
-        .unit-title {
-            margin-top: 25px;
-            padding: 20px;
-            border-left: 5px solid #2563eb;
-            background: #f8fafc;
-            text-align: left;
-            border-radius: 8px;
-        }
+.unit {
+    text-align: left;
+    background: #f8fafc;
+    border-left: 5px solid #2563eb;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
 
-        .unit-title h3 {
-            color: #111827;
-            margin-bottom: 6px;
-        }
+.unit h3 {
+    color: #111827;
+    margin-bottom: 5px;
+}
 
-        .topic {
-            margin-top: 25px;
-            text-align: left;
-        }
+.topic {
+    text-align: left;
+    margin-top: 25px;
+}
 
-        .topic h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
-            color: #111827;
-        }
+.topic h3 {
+    margin-bottom: 10px;
+    color: #111827;
+}
 
-        .topic-box {
-            background: #f9fafb;
-            padding: 18px;
-            border-radius: 10px;
-            border: 1px solid #e5e7eb;
-        }
+.topic-box {
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    padding: 18px;
+    border-radius: 10px;
+}
 
-        .coming-soon {
-            margin-top: 25px;
-            background: #fff7ed;
-            border: 1px solid #fed7aa;
-            padding: 15px;
-            border-radius: 10px;
-            color: #9a3412;
-            font-weight: bold;
-        }
+.pdf-button {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 13px 25px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
 
-        .back-button {
-            display: inline-block;
-            margin-top: 28px;
-            padding: 12px 22px;
-            background: #2563eb;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-        }
+.pdf-button:hover {
+    background: #1d4ed8;
+}
 
-        footer {
-            margin-top: 50px;
-            background: #111827;
-            color: #d1d5db;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
+footer {
+    margin-top: 50px;
+    background: #111827;
+    color: #d1d5db;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
 
-        @media (max-width: 600px) {
-            header h1 {
-                font-size: 24px;
-            }
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
 
-            .main-card h2 {
-                font-size: 23px;
-            }
-
-            .container {
-                margin-top: 25px;
-            }
-        }
-    </style>
+    h2 {
+        font-size: 23px;
+    }
+}
+</style>
 </head>
 
 <body>
@@ -183,53 +169,53 @@
 
 <div class="container">
 
-    <a href="semester5.html" class="back">← Back to Semester 5</a>
+<a href="semester5.html" class="back">
+← Back to Semester 5
+</a>
 
-    <div class="main-card">
+<div class="card">
 
-        <span class="badge">B.COM SEM-V • UNIT-1</span>
+<span class="badge">B.COM SEM-V • UNIT-1</span>
 
-        <h2>Traditional and Rural Marketing in India</h2>
+<h2>Traditional and Rural Marketing in India</h2>
 
-        <p class="subject">
-            Subject: Indian Marketing Management Practices
-        </p>
+<p class="subject">
+Subject: Indian Marketing Management Practices
+</p>
 
-        <div class="author">
-            <strong>Ajay R. Chauhan</strong>
-            B.COM, M.COM, LL.B, PH.D (PURSUING)
-        </div>
+<div class="author">
+<strong>Ajay R. Chauhan</strong>
+B.COM, M.COM, LL.B, PH.D (PURSUING)
+</div>
 
-        <div class="unit-title">
-            <h3>UNIT-1: RURAL MARKETING IN INDIA</h3>
-            <p>Indian Marketing Management Practices</p>
-        </div>
+<div class="unit">
+<h3>UNIT-1: RURAL MARKETING IN INDIA</h3>
+<p>Indian Marketing Management Practices</p>
+</div>
 
-        <div class="topic">
-            <h3>Topic 1</h3>
+<div class="topic">
 
-            <div class="topic-box">
-                <strong>Meaning of Traditional Marketing</strong>
-                <p>
-                    Study material for Unit 1 will be added here.
-                </p>
-            </div>
-        </div>
+<h3>Topic 1</h3>
 
-        <div class="coming-soon">
-            📚 More Unit 1 study material will be added soon.
-        </div>
+<div class="topic-box">
+<strong>Meaning of Traditional Marketing</strong>
+<p>
+Study material for this topic is available in the Unit 1 PDF.
+</p>
+</div>
 
-        <a href="semester5.html" class="back-button">
-            ← Back to Semester 5
-        </a>
+</div>
 
-    </div>
+<a href="unit1-notes.pdf" target="_blank" class="pdf-button">
+📄 View / Download Unit 1 PDF
+</a>
+
+</div>
 
 </div>
 
 <footer>
-    © 2026 Ajay Chauhan | Educational Study Material
+© 2026 Ajay Chauhan | Educational Study Material
 </footer>
 
 </body>

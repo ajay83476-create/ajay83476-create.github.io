@@ -1,117 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Study Material - Ajay Chauhan</title>
+<title>Study Material | Ajay Chauhan</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-        body {
-            font-family: Arial, sans-serif;
-            background: #f4f7fb;
-            color: #222;
-        }
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+}
 
-        header {
-            background: #111827;
-            color: white;
-            padding: 25px 20px;
-            text-align: center;
-        }
+header {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 28px 20px;
+}
 
-        header h1 {
-            font-size: 30px;
-            margin-bottom: 8px;
-        }
+header h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
 
-        header p {
-            font-size: 15px;
-            color: #d1d5db;
-        }
+header p {
+    color: #d1d5db;
+}
 
-        .container {
-            max-width: 1000px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
+.container {
+    max-width: 900px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
 
-        .back {
-            display: inline-block;
-            margin-bottom: 25px;
-            text-decoration: none;
-            color: #2563eb;
-            font-weight: bold;
-        }
+.back {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        .title {
-            text-align: center;
-            margin-bottom: 35px;
-        }
+.card {
+    display: block;
+    background: white;
+    padding: 30px 25px;
+    border-radius: 16px;
+    text-decoration: none;
+    color: #111827;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.2s;
+}
 
-        .title h2 {
-            font-size: 32px;
-            margin-bottom: 10px;
-        }
+.card:hover {
+    transform: translateY(-3px);
+}
 
-        .title p {
-            color: #666;
-        }
+.card h2 {
+    color: #2563eb;
+    margin-bottom: 8px;
+}
 
-        .card {
-            background: white;
-            border-radius: 15px;
-            padding: 30px;
-            text-align: center;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-            max-width: 500px;
-            margin: auto;
-        }
+.card p {
+    color: #4b5563;
+}
 
-        .card .icon {
-            font-size: 55px;
-            margin-bottom: 15px;
-        }
-
-        .card h3 {
-            font-size: 25px;
-            margin-bottom: 10px;
-        }
-
-        .card p {
-            color: #666;
-            margin-bottom: 20px;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 12px 25px;
-            background: #2563eb;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: bold;
-        }
-
-        .btn:hover {
-            background: #1d4ed8;
-        }
-
-        footer {
-            margin-top: 60px;
-            background: #111827;
-            color: #ccc;
-            text-align: center;
-            padding: 20px;
-            font-size: 14px;
-        }
-    </style>
+footer {
+    margin-top: 50px;
+    background: #111827;
+    color: #d1d5db;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+</style>
 </head>
 
 <body>
@@ -123,29 +93,14 @@
 
 <div class="container">
 
-    <a href="index.html" class="back">← Back to Home</a>
+<a href="index.html" class="back">
+← Back to Home
+</a>
 
-    <div class="title">
-        <h2>📚 Study Material</h2>
-        <p>Select your course to access study materials.</p>
-    </div>
-
-    <div class="card">
-
-        <div class="icon">📚</div>
-
-        <h3>B.Com</h3>
-
-        <p>
-            Access B.Com semester-wise study material,
-            units, notes and PDF resources.
-        </p>
-
-        <a href="bcom.html" class="btn">
-            Open B.Com
-        </a>
-
-    </div>
+<a href="bcom.html" class="card">
+    <h2>B.Com</h2>
+    <p>Study material, semester-wise notes and learning resources.</p>
+</a>
 
 </div>
 

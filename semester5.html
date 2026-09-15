@@ -66,31 +66,36 @@ header p {
     color: #666;
 }
 
-.unit-grid {
+.subject-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 }
 
-.unit {
+.subject {
     background: white;
-    padding: 28px;
+    padding: 30px 20px;
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
 }
 
-.unit .icon {
+.subject:hover {
+    transform: translateY(-5px);
+}
+
+.subject .icon {
     font-size: 45px;
     margin-bottom: 12px;
 }
 
-.unit h3 {
+.subject h3 {
     font-size: 23px;
     margin-bottom: 10px;
 }
 
-.unit p {
+.subject p {
     color: #666;
     margin-bottom: 18px;
 }
@@ -109,18 +114,197 @@ header p {
     background: #1d4ed8;
 }
 
-.locked {
-    opacity: 0.65;
-}
-
-.coming {
-    display: inline-block;
-    padding: 10px 18px;
-    background: #e5e7eb;
-    color: #555;
-    border-radius: 8px;
-    font-weight: bold;
-}
-
 footer {
-    margin
+    margin-top: 60px;
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+@media (max-width: 600px) {
+
+    .subject-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .title h2 {
+        font-size: 27px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Ajay Chauhan</h1>
+
+    <p>
+        Academic Learning Portal
+    </p>
+
+</header>
+
+
+<div class="container">
+
+    <a href="../index.html" class="back">
+        ← Back to Home
+    </a>
+
+
+    <div class="title">
+
+        <h2>B.Com Semester 5</h2>
+
+        <p>
+            Select your subject
+        </p>
+
+    </div>
+
+
+    <div class="subject-grid">
+
+
+        <!-- SUBJECT 1 -->
+
+        <div class="subject">
+
+            <div class="icon">📚</div>
+
+            <h3>Subject 1</h3>
+
+            <p>
+                Study Material & Units
+            </p>
+
+            <a href="subject1/index.html" class="btn">
+                Open Subject
+            </a>
+
+        </div>
+
+
+        <!-- SUBJECT 2 -->
+
+        <div class="subject">
+
+            <div class="icon">📖</div>
+
+            <h3>Subject 2</h3>
+
+            <p>
+                Study Material & Units
+            </p>
+
+            <a href="subject2/index.html" class="btn">
+                Open Subject
+            </a>
+
+        </div>
+
+
+        <!-- SUBJECT 3 -->
+
+        <div class="subject">
+
+            <div class="icon">📝</div>
+
+            <h3>Subject 3</h3>
+
+            <p>
+                Study Material & Units
+            </p>
+
+            <a href="subject3/index.html" class="btn">
+                Open Subject
+            </a>
+
+        </div>
+
+
+        <!-- SUBJECT 4 -->
+
+        <div class="subject">
+
+            <div class="icon">🎓</div>
+
+            <h3>Subject 4</h3>
+
+            <p>
+                Study Material & Units
+            </p>
+
+            <a href="subject4/index.html" class="btn">
+                Open Subject
+            </a>
+
+        </div>
+
+
+        <!-- SUBJECT 5 -->
+
+        <div class="subject">
+
+            <div class="icon">📊</div>
+
+            <h3>Subject 5</h3>
+
+            <p>
+                Study Material & Units
+            </p>
+
+            <a href="subject5/index.html" class="btn">
+                Open Subject
+            </a>
+
+        </div>
+
+
+        <!-- SUBJECT 6 -->
+
+        <div class="subject">
+
+            <div class="icon">💼</div>
+
+            <h3>Subject 6</h3>
+
+            <p>
+                Study Material & Units
+            </p>
+
+            <a href="subject6/index.html" class="btn">
+                Open Subject
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <p>
+        © 2026 Ajay Chauhan
+    </p>
+
+    <p>
+        B.Com Academic Learning Portal
+    </p>
+
+</footer>
+
+</body>
+</html>

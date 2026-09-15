@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>B.Com Semester 5 | Ajay Chauhan</title>
+<title>Subject 1 | B.Com Semester 5</title>
 
 <style>
 
@@ -22,8 +22,6 @@ body {
     color: #222;
 }
 
-/* HEADER */
-
 header {
     background: #111827;
     color: white;
@@ -38,18 +36,13 @@ header h1 {
 
 header p {
     color: #d1d5db;
-    font-size: 15px;
 }
-
-/* CONTAINER */
 
 .container {
     max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
 }
-
-/* BACK BUTTON */
 
 .back {
     display: inline-block;
@@ -59,28 +52,19 @@ header p {
     font-weight: bold;
 }
 
-.back:hover {
-    text-decoration: underline;
-}
-
-/* TITLE */
-
 .title {
     text-align: center;
     margin-bottom: 35px;
 }
 
 .title h2 {
-    font-size: 32px;
+    font-size: 30px;
     margin-bottom: 10px;
 }
 
 .title p {
     color: #666;
-    font-size: 16px;
 }
-
-/* UNIT GRID */
 
 .unit-grid {
     display: grid;
@@ -88,15 +72,206 @@ header p {
     gap: 20px;
 }
 
-/* UNIT CARD */
-
 .unit {
     background: white;
-    padding: 28px;
+    padding: 30px 20px;
     border-radius: 15px;
     text-align: center;
     box-shadow: 0 5px 20px rgba(0,0,0,0.08);
     transition: 0.3s;
 }
 
-.unit
+.unit:hover {
+    transform: translateY(-5px);
+}
+
+.icon {
+    font-size: 45px;
+    margin-bottom: 12px;
+}
+
+.unit h3 {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+.unit p {
+    color: #666;
+    margin-bottom: 18px;
+    line-height: 1.5;
+}
+
+.btn {
+    display: inline-block;
+    padding: 11px 22px;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+footer {
+    margin-top: 60px;
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+@media (max-width: 600px) {
+
+    .unit-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .title h2 {
+        font-size: 27px;
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <h1>Ajay Chauhan</h1>
+
+    <p>B.Com Academic Learning Portal</p>
+
+</header>
+
+
+<div class="container">
+
+    <a href="../index.html" class="back">
+        ← Back to Semester 5
+    </a>
+
+
+    <div class="title">
+
+        <h2>Subject 1</h2>
+
+        <p>
+            B.Com Semester 5 – Study Material
+        </p>
+
+    </div>
+
+
+    <div class="unit-grid">
+
+
+        <!-- UNIT 1 -->
+
+        <div class="unit">
+
+            <div class="icon">📘</div>
+
+            <h3>Unit 1</h3>
+
+            <p>
+                Traditional and Rural Marketing in India
+            </p>
+
+            <a href="unit1.pdf"
+               class="btn"
+               target="_blank">
+                📄 Open PDF
+            </a>
+
+        </div>
+
+
+        <!-- UNIT 2 -->
+
+        <div class="unit">
+
+            <div class="icon">📗</div>
+
+            <h3>Unit 2</h3>
+
+            <p>
+                B.Com Semester 5 – Unit 2
+            </p>
+
+            <a href="unit2.pdf"
+               class="btn"
+               target="_blank">
+                📄 Open PDF
+            </a>
+
+        </div>
+
+
+        <!-- UNIT 3 -->
+
+        <div class="unit">
+
+            <div class="icon">📙</div>
+
+            <h3>Unit 3</h3>
+
+            <p>
+                B.Com Semester 5 – Unit 3
+            </p>
+
+            <a href="unit3.pdf"
+               class="btn"
+               target="_blank">
+                📄 Open PDF
+            </a>
+
+        </div>
+
+
+        <!-- UNIT 4 -->
+
+        <div class="unit">
+
+            <div class="icon">📕</div>
+
+            <h3>Unit 4</h3>
+
+            <p>
+                B.Com Semester 5 – Unit 4
+            </p>
+
+            <a href="unit4.pdf"
+               class="btn"
+               target="_blank">
+                📄 Open PDF
+            </a>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<footer>
+
+    <p>© 2026 Ajay Chauhan</p>
+
+    <p>B.Com Academic Learning Portal</p>
+
+</footer>
+
+</body>
+
+</html>

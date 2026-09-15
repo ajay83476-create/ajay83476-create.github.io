@@ -1,28 +1,207 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>B.Com Semester 1 | Ajay Chauhan</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>B.Com | Ajay Chauhan</title>
+
+<style>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+}
+
+header {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 28px 20px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+header p {
+    color: #d1d5db;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 0 20px;
+}
+
+.back {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: #111827;
+}
+
+.semesters {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    padding: 30px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.card h3 {
+    font-size: 21px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #64748b;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.open-button {
+    display: inline-block;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 11px 22px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.open-button:hover {
+    background: #1d4ed8;
+}
+
+.coming {
+    background: #f3f4f6;
+    color: #6b7280;
+    padding: 11px 18px;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+footer {
+    margin-top: 50px;
+    background: #111827;
+    color: #d1d5db;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+}
+</style>
 </head>
 
-<body style="font-family:Arial;background:#f5f7fb;margin:0;color:#1e293b;">
+<body>
 
-<header style="background:#0f172a;color:white;text-align:center;padding:25px;">
+<header>
     <h1>AJAY CHAUHAN</h1>
-    <p>B.Com - Semester 1</p>
+    <p>Learn Better. Study Smarter.</p>
 </header>
 
-<main style="max-width:900px;margin:auto;padding:40px 20px;">
-    <a href="bcom.html">← Back to B.Com</a>
+<div class="container">
 
-    <h2 style="text-align:center;margin:40px 0;">📚 Semester 1 Subjects</h2>
+<a href="study-material.html" class="back">
+← Back to Study Material
+</a>
 
-    <div style="background:white;padding:30px;border-radius:15px;text-align:center;">
-        <h3>Subjects will be added soon</h3>
-        <p>Study material, PDF, PPT and notes will be available here.</p>
+<h2>B.Com — Semesters</h2>
+
+<div class="semesters">
+
+    <!-- SEMESTER 1 -->
+    <div class="card">
+        <h3>Semester 1</h3>
+        <p>Study material will be available soon.</p>
+        <span class="coming">Coming Soon</span>
     </div>
-</main>
+
+    <!-- SEMESTER 2 -->
+    <div class="card">
+        <h3>Semester 2</h3>
+        <p>Study material will be available soon.</p>
+        <span class="coming">Coming Soon</span>
+    </div>
+
+    <!-- SEMESTER 3 -->
+    <div class="card">
+        <h3>Semester 3</h3>
+        <p>Study material will be available soon.</p>
+        <span class="coming">Coming Soon</span>
+    </div>
+
+    <!-- SEMESTER 4 -->
+    <div class="card">
+        <h3>Semester 4</h3>
+        <p>Study material will be available soon.</p>
+        <span class="coming">Coming Soon</span>
+    </div>
+
+    <!-- SEMESTER 5 -->
+    <div class="card">
+
+        <h3>Semester 5</h3>
+
+        <p>
+            Indian Marketing Management Practices
+            and other study material.
+        </p>
+
+        <!-- CORRECT FILE NAME -->
+        <a href="semester5.html" class="open-button">
+            Open Semester 5
+        </a>
+
+    </div>
+
+    <!-- SEMESTER 6 -->
+    <div class="card">
+        <h3>Semester 6</h3>
+        <p>Study material will be available soon.</p>
+        <span class="coming">Coming Soon</span>
+    </div>
+
+</div>
+
+</div>
+
+<footer>
+    © 2026 Ajay Chauhan | Educational Study Material
+</footer>
 
 </body>
 </html>

@@ -1,126 +1,620 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay Chauhan | Academic Learning Portal</title>
 
-<title>Ajay Chauhan | Student Learning Portal</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
 
-<meta name="description" content="Ajay Chauhan Student Learning Portal - Notes, PDFs, PPTs, Assignments and Educational Resources.">
+        body {
+            background: #f5f7fb;
+            color: #222;
+        }
 
-<style>
+        /* ===== HEADER ===== */
+        header {
+            background: #12355b;
+            color: white;
+            padding: 15px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
 
-body {
-    font-family: Arial, sans-serif;
-    background: #f4f7fb;
-    color: #1e293b;
-}
+        .logo span {
+            color: #ffd166;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 15px;
+        }
+
+        nav a:hover {
+            color: #ffd166;
+        }
+
+        /* ===== HERO ===== */
+        .hero {
+            min-height: 480px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 70px 7%;
+            background: linear-gradient(135deg, #12355b, #1d6fa5);
+            color: white;
+        }
+
+        .hero-text {
+            max-width: 650px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 span {
+            color: #ffd166;
+        }
+
+        .hero p {
+            font-size: 19px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 13px 24px;
+            margin-right: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn-primary {
+            background: #ffd166;
+            color: #222;
+        }
+
+        .btn-secondary {
+            border: 2px solid white;
+            color: white;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+
+        /* ===== SECTION ===== */
+        section {
+            padding: 60px 7%;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            color: #12355b;
+        }
+
+        .section-title p {
+            margin-top: 10px;
+            color: #666;
+        }
+
+        /* ===== CARDS ===== */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px 20px;
+            border-radius: 14px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .card .icon {
+            font-size: 45px;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #12355b;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .card a {
+            display: inline-block;
+            background: #12355b;
+            color: white;
+            padding: 9px 18px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        /* ===== UPDATES ===== */
+        .updates {
+            background: white;
+        }
+
+        .update-list {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .update {
+            padding: 15px 20px;
+            border-left: 5px solid #12355b;
+            background: #f5f7fb;
+            margin-bottom: 12px;
+            border-radius: 5px;
+        }
+
+        /* ===== SUBJECTS ===== */
+        .subjects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .subject {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 30px;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+            color: #12355b;
+            font-weight: bold;
+        }
+
+        /* ===== ABOUT ===== */
+        .about {
+            background: #eef4f8;
+        }
+
+        .about-box {
+            max-width: 900px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .about-box h2 {
+            color: #12355b;
+            margin-bottom: 15px;
+        }
+
+        .about-box p {
+            line-height: 1.8;
+            color: #555;
+        }
+
+        /* ===== FOOTER ===== */
+        footer {
+            background: #12355b;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        footer p {
+            margin: 7px;
+        }
+
+        footer a {
+            color: #ffd166;
+            text-decoration: none;
+        }
+
+        /* ===== MOBILE ===== */
+        @media (max-width: 900px) {
+
+            .cards {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            nav a {
+                margin-left: 8px;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px;
+                font-size: 13px;
+            }
+
+            .hero {
+                text-align: center;
+                padding: 60px 20px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 45px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+
+<header>
+
+    <div class="logo">
+        Ajay <span>Chauhan</span>
+    </div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="study-material.html">Study Material</a>
+        <a href="exam-papers.html">Exam Papers</a>
+        <a href="ppt.html">Lecture PPT</a>
+        <a href="syllabus.html">Syllabus</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+</header>
 
 
-/* HEADER */
+<!-- ===== HERO SECTION ===== -->
 
-header {
-    background: #0f172a;
-    color: white;
-    padding: 20px 6%;
+<section class="hero">
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    <div class="hero-text">
 
-    flex-wrap: wrap;
-    gap: 15px;
-}
+        <h1>
+            Welcome to <span>Ajay Chauhan</span>
+            Academic Portal
+        </h1>
 
-.logo {
-    font-size: 25px;
-    font-weight: bold;
-}
+        <p>
+            Your one-stop platform for Study Materials,
+            Exam Papers, Lecture PPTs, Syllabus,
+            Assignments and Academic Resources.
+        </p>
 
-.tagline {
-    font-size: 12px;
-    color: #cbd5e1;
-    margin-top: 5px;
-}
+        <a href="study-material.html" class="btn btn-primary">
+            Explore Study Material
+        </a>
 
+        <a href="exam-papers.html" class="btn btn-secondary">
+            Exam Papers
+        </a>
 
-/* NAVIGATION */
+    </div>
 
-nav {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 18px;
-}
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-nav a:hover {
-    color: #38bdf8;
-}
-
-.study-link {
-    background: #38bdf8;
-    color: #0f172a !important;
-
-    padding: 9px 14px;
-    border-radius: 7px;
-
-    font-weight: bold;
-}
+</section>
 
 
-/* HERO */
+<!-- ===== QUICK ACCESS ===== -->
 
-.hero {
-    background: linear-gradient(135deg, #0f172a, #1e40af);
+<section>
 
-    color: white;
-    text-align: center;
+    <div class="section-title">
 
-    padding: 80px 20px;
-}
+        <h2>📚 Academic Resources</h2>
 
-.hero h1 {
-    font-size: 42px;
-    margin-bottom: 15px;
-}
+        <p>
+            Access all important study resources in one place.
+        </p>
 
-.hero p {
-    font-size: 18px;
-    color: #dbeafe;
-
-    max-width: 700px;
-    margin: auto;
-
-    line-height: 1.6;
-}
+    </div>
 
 
-/* STUDY MATERIAL */
+    <div class="cards">
 
-.section {
-    padding: 55px 6%;
-}
 
-.section h2 {
-    text-align: center;
-    margin-bottom: 35px;
-    font-size: 30px;
-}
+        <!-- Study Material -->
 
-.cards {
-    display: grid;
+        <div class="card">
+
+            <div class="icon">📚</div>
+
+            <h3>Study Material</h3>
+
+            <p>
+                Unit-wise notes, important questions
+                and study materials.
+            </p>
+
+            <a href="study-material.html">
+                View Material
+            </a>
+
+        </div>
+
+
+        <!-- Exam Papers -->
+
+        <div class="card">
+
+            <div class="icon">📝</div>
+
+            <h3>Exam Papers</h3>
+
+            <p>
+                Previous year question papers
+                and examination resources.
+            </p>
+
+            <a href="exam-papers.html">
+                View Papers
+            </a>
+
+        </div>
+
+
+        <!-- Lecture PPT -->
+
+        <div class="card">
+
+            <div class="icon">🎞️</div>
+
+            <h3>Lecture PPT</h3>
+
+            <p>
+                Chapter-wise and unit-wise
+                lecture presentations.
+            </p>
+
+            <a href="ppt.html">
+                View PPT
+            </a>
+
+        </div>
+
+
+        <!-- Syllabus -->
+
+        <div class="card">
+
+            <div class="icon">📋</div>
+
+            <h3>Syllabus</h3>
+
+            <p>
+                Semester-wise and subject-wise
+                syllabus information.
+            </p>
+
+            <a href="syllabus.html">
+                View Syllabus
+            </a>
+
+        </div>
+
+
+        <!-- Assignments -->
+
+        <div class="card">
+
+            <div class="icon">✍️</div>
+
+            <h3>Assignments</h3>
+
+            <p>
+                Assignment questions, instructions
+                and academic activities.
+            </p>
+
+            <a href="assignments.html">
+                View Assignments
+            </a>
+
+        </div>
+
+
+        <!-- Lectures -->
+
+        <div class="card">
+
+            <div class="icon">🎥</div>
+
+            <h3>Online Lectures</h3>
+
+            <p>
+                Educational videos and
+                online learning resources.
+            </p>
+
+            <a href="lectures.html">
+                Watch Lectures
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ===== LATEST UPDATES ===== -->
+
+<section class="updates">
+
+    <div class="section-title">
+
+        <h2>📢 Latest Updates</h2>
+
+        <p>Latest academic resources and announcements.</p>
+
+    </div>
+
+
+    <div class="update-list">
+
+        <div class="update">
+            📚 New Study Material will be uploaded soon.
+        </div>
+
+        <div class="update">
+            📝 Previous Year Exam Papers are available.
+        </div>
+
+        <div class="update">
+            🎞️ New Lecture PPTs will be added regularly.
+        </div>
+
+        <div class="update">
+            📢 Check this section regularly for new updates.
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ===== SUBJECTS ===== -->
+
+<section>
+
+    <div class="section-title">
+
+        <h2>🎓 Subjects</h2>
+
+        <p>Academic subjects and learning resources.</p>
+
+    </div>
+
+
+    <div class="subjects">
+
+        <div class="subject">Accountancy</div>
+
+        <div class="subject">Business Law</div>
+
+        <div class="subject">Business Economics</div>
+
+        <div class="subject">Business Statistics</div>
+
+        <div class="subject">MMP</div>
+
+        <div class="subject">Economic Research</div>
+
+    </div>
+
+</section>
+
+
+<!-- ===== ABOUT PROFESSOR ===== -->
+
+<section class="about">
+
+    <div class="about-box">
+
+        <h2>👨‍🏫 About Professor</h2>
+
+        <p>
+            Welcome to my academic learning portal.
+            I am <strong>Ajay Chauhan</strong>.
+            This website is created to provide students
+            with easy access to study materials, exam papers,
+            lecture presentations, syllabus, assignments
+            and other useful academic resources.
+        </p>
+
+        <br>
+
+        <p>
+            My goal is to make quality academic resources
+            easily accessible to students and help them
+            in their studies and examination preparation.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ===== FOOTER ===== -->
+
+<footer>
+
+    <p>
+        © 2026 <strong>Ajay Chauhan</strong>
+    </p>
+
+    <p>
+        Academic Learning Portal
+    </p>
+
+    <p>
+        Study • Learn • Practice • Achieve
+    </p>
+
+</footer>
+
+
+</body>
+</html>
